@@ -72,24 +72,25 @@ h3{
     padding-bottom: 10px;
 }
 
-
-
-#background-button{
-    position: relative;
-
-    z-index: 2;
+#icon-map{
+    max-width: 25px;
 }
 #background-cover{
-    margin-top: 100px;
-    position: absolute;
-    filter: blur(4px);
-    z-index: 1;
+    backdrop-filter: blur(3px) brightness(67%);
+    border-radius: 10px;
 
 }
 #separation{
     margin-top: 70px;
     margin-bottom: 80px;
     
+}
+#button{
+    display: flex;
+    justify-content:space-evenly;
+    width: 100%;
+    margin: auto;
+   
 }
 
 /* 1400px, 1100px, 1023px, 767px */

@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poppins:wght@100&display=swap');
 
 body {
     background-color: #CAD2C5;
@@ -10,7 +11,9 @@ body {
     align-items: center;
     display: flex;
     flex-direction: row;
-    
+    background-color: #CAD2C5;
+    min-height: 150px;
+    padding-bottom: 40px;
 }
 
 .header div {
@@ -19,7 +22,7 @@ body {
 
 .title {
     width: 86%;
-    height: 70px;
+    height: 50px;
     position: relative;
 }
 .title h1{
@@ -27,6 +30,11 @@ body {
 }
 .title h2{
     font-size: 40px;
+}
+
+.title h3{
+    font-size: 25px;
+    font-size: 20px;
 }
 
 .logo{
@@ -54,15 +62,40 @@ h1 {
 h2 {
     font-family: 'Amatic SC', cursive;
     font-style: bold;
-    font-size: 35px;
+    font-size: 30px;
+    margin-top: -15px;
+}
+h3{
+    font-family: 'poppins', sans-serif;
+
+    margin-top: -10px;
+    padding-bottom: 10px;
 }
 
 
 
+#background-button{
+    position: relative;
+
+    z-index: 2;
+}
+#background-cover{
+    margin-top: 100px;
+    position: absolute;
+    filter: blur(4px);
+    z-index: 1;
+
+}
+#separation{
+    margin-top: 70px;
+    margin-bottom: 80px;
+    
+}
+
 /* 1400px, 1100px, 1023px, 767px */
 @media screen and (max-width: 1400px) {
     body {
-        background-color: #C7C0C2;
+        background-color: #CAD2C5;
         height: 1080px;
     }
 

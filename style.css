@@ -1,36 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 
-body{
+body {
     background-color: #CAD2C5;
     height: 1080px;
 }
-h1{
+
+.header {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.header div {
+    padding: 7px;
+}
+
+.title {
+    width: 86%;
+    height: 70px;
+}
+.title h1{
+    font-size: 60px;
+}
+.title h2{
+    font-size: 40px;
+}
+
+.logo{
+    width: 90px;
+    height: 90px;
+}
+
+.account-box{
+    width: 90px;
+    height: 90px;
+}
+.account{
+    width: 45px;
+    height: 45px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+h1 {
     font-family: 'Amatic SC', cursive;
     font-size: 50px;
 
 }
 
-h2{
+h2 {
     font-family: 'Amatic SC', cursive;
     font-style: bold;
     font-size: 35px;
 }
+
+
+
 /* 1400px, 1100px, 1023px, 767px */
 @media screen and (max-width: 1400px) {
-    body{
+    body {
         background-color: #C7C0C2;
         height: 1080px;
     }
-    h1{
+
+    h1 {
         font-family: 'Amatic SC', cursive;
         font-size: 50px;
-    
+
     }
-    
-    h2{
+
+    h2 {
         font-family: 'Amatic SC', cursive;
         font-style: bold;
         font-size: 35px;
     }
 }
-    

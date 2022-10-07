@@ -13,43 +13,17 @@
     <title>Study-lunch</title>
 </head>
 <body>
+    <div class="header">
     <div>
-        <h1 class="uk-heading-line uk-text-center"><span>Student Lunch</span></h1>
-        <h2 class="uk-text-center" >-MDS-</h2>
-        <div class="uk-container uk-container-small">
-            <progress id="js-progressbar" class="uk-progress" value="10" max="100"></progress>
-        </div>
+        <img class="logo" src="logo-studentLunch-v2.png" alt="logo">
     </div>
-    <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover"
-     sources="[{&quot;srcset&quot;: &quot;images/image-type.avif&quot;,
-                &quot;type&quot;: &quot;image\/avif&quot;
-                },
-                {&quot;srcset&quot;: &quot;images/image-type.webp&quot;,
-                &quot;type&quot;: &quot;image\/webp&quot;
-                }]"
-        data-src="images/image-type.jpg"
-        uk-img>
-    <h1>Background Image</h1>
-</div>
-    
+    <div class="title">
+        <h1 class="uk-heading-line uk-text-center"><span>Study Lunch</span></h1>
+        <h2 class="uk-text-center" >-MDS-</h2>
+    </div>
+    <div class="account-box">
+        <img class="account" src="compte.png" alt="compte">
+    </div>
+    </div>
 </body>
-
-<script>
-    UIkit.util.ready(function () {
-
-        var bar = document.getElementById('js-progressbar');
-
-        var animate = setInterval(function () {
-
-            bar.value += 10;
-
-            if (bar.value >= bar.max) {
-                clearInterval(animate);
-            }
-
-        }, 1000);
-
-    });
-
-</script>
 </html>

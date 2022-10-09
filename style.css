@@ -77,6 +77,10 @@ h3{
 #icon-map{
     max-width: 25px;
 }
+.card{
+    border-radius: 10px;
+
+}
 #background-cover{
     backdrop-filter: blur(3px) brightness(67%);
     border-radius: 10px;
@@ -162,7 +166,7 @@ h3{
 }
 
 /* 1400px, 1100px, 1023px, 767px */
-@media screen and (max-width: 1400px) {
+/* @media screen and (max-width: 1400px) {
     body {
         background-color: #CAD2C5;
         height: 1080px;
@@ -179,4 +183,4 @@ h3{
         font-style: bold;
         font-size: 35px;
     }
-}
+} */

@@ -12,7 +12,7 @@ body {
     flex-direction: row;
     background-color: #CAD2C5;
     min-height: 150px;
-    padding-bottom: 40px;
+    padding-bottom: 100px;
 }
 
 .header div {
@@ -31,6 +31,7 @@ body {
 
 .title h2 {
     font-size: 40px;
+    margin-top: -15px;
 }
 
 .title h3{
@@ -65,7 +66,6 @@ h2 {
     font-family: 'Amatic SC', cursive;
     font-style: bold;
     font-size: 30px;
-    margin-top: -15px;
 }
 h3{
     font-family: 'poppins', sans-serif;
@@ -98,6 +98,54 @@ h3{
     margin: auto;
    
 }
+
+/* COMPTE */
+
+.formulaire{
+    display: none;
+    background-color: white;
+    width: 30%;
+    height: 750px;
+    justify-content: right;
+    float: right;
+    text-align: center;
+}
+.formulaire h2{
+    margin-top: 50px;
+}
+.sign-up{
+    margin: 50px;
+}
+.sign-up a{
+    margin-left: 20px;
+}
+
+
+
+
+
+/* liste de restaurants */
+
+.uk-container {
+    background-color: #354F52;
+    border-radius: 15px;
+    width: 70%;
+}
+    .box {
+        width: 90%;
+    }
+.box br{
+    margin:2px;
+}
+.box img{
+   width: 230px;
+   height: 170px;
+}
+.uk-card-body{
+    width: 100%;
+    }
+
+
 /* SECTION MAP */
 .map-section {
     display: flex;
@@ -138,8 +186,10 @@ h3{
     width: 100%;
     padding-left: 8px;
     padding-right: 8px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    padding-top: 8px;
+}
+.infos h3{
+    font-weight: bolder;
 }
 .title-star{
     display: flex;

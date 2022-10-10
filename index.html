@@ -28,8 +28,118 @@
                     <h2 class="uk-text-center">-MDS-</h2>
                     <h3 class="uk-text-center">-Trouver où luncher, avec simplicité -</h3>
                 </div>
-                <div class="account-box">
-                    <img class="account" src="icon-utilisateur.png" alt="compte">
+                <!-- Login form -->
+                <a href="#modal-full" uk-toggle>
+                    <div class="account-box">
+                        <img class="account" src="icon-utilisateur.png" alt="compte">
+                    </div>
+                </a>
+                
+
+                <div id="modal-full" class="uk-modal-full" uk-modal>
+                    <div class="uk-modal-dialog half-modal">
+                        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+                        <div class="uk-section uk-section-muted uk-flex uk-flex-left uk-animation-fade" uk-height-viewport>
+                            <div class="uk-width-1-1">
+                                <div class="uk-container">
+                                    <div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid>
+                                        <div >
+                                            <form class="uk-margin uk-width-large uk-margin-auto uk-card uk-card-default uk-card-body uk-box-shadow-large">
+                                                <ul class="uk-tab uk-flex-center" uk-grid uk-switcher="animation: uk-animation-fade">
+                                                    <li><a href="#">Sign Up</a></li>
+                                                    <li><a href="#">Log In</a></li>
+                                                    <li class="uk-hidden">Forgot Password?</li>
+                                                </ul>
+                                                <ul class="uk-switcher uk-margin">
+                                                    <li>
+                                                        <h3 class="uk-card-title uk-text-center">Sign up today. It's free!</h3>
+                                                        <form>
+                                                            <div class="uk-margin">
+                                                                <div class="uk-inline uk-width-1-1">
+                                                                    <span class="uk-form-icon" uk-icon="icon: user"></span>
+                                                                    <input class="uk-input uk-form-large" type="text" placeholder="First and last name">
+                                                                </div>
+                                                            </div>
+                                                            <div class="uk-margin">
+                                                                <div class="uk-inline uk-width-1-1">
+                                                                    <span class="uk-form-icon" uk-icon="icon: mail"></span>
+                                                                    <input class="uk-input uk-form-large" type="text" placeholder="Email address">
+                                                                </div>
+                                                            </div>
+                                                            <div class="uk-margin">
+                                                                <div class="uk-inline uk-width-1-1">
+                                                                    <span class="uk-form-icon" uk-icon="icon: lock"></span>
+                                                                    <input class="uk-input uk-form-large" type="password" placeholder="Set a password">	
+                                                                </div>
+                                                            </div>
+                                                            <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                                                                <label><input class="uk-checkbox" type="checkbox"> I agree the Terms and Conditions.</label>
+                                                            </div>
+                                                            <div class="uk-margin">
+                                                                <button class="uk-button uk-button-primary uk-button-large uk-width-1-1">Login</button>
+                                                            </div>
+                                                            <div class="uk-text-small uk-text-center">
+                                                                Déjà inscrit ? <a href="#" uk-switcher-item="1">Log in</a>
+                                                            </div>
+                                                        </form>
+                                                    </li>
+                                                    <li>
+                                                        <h3 class="uk-card-title uk-text-center">Welcome back!</h3>
+                                                        <form>
+                                                            <div class="uk-margin">
+                                                                <div class="uk-inline uk-width-1-1">
+                                                                    <span class="uk-form-icon" uk-icon="icon: mail"></span>
+                                                                    <input class="uk-input uk-form-large" type="text" placeholder="Email address">
+                                                                </div>
+                                                            </div>
+                                                            <div class="uk-margin">
+                                                                <div class="uk-inline uk-width-1-1">
+                                                                    <span class="uk-form-icon" uk-icon="icon: lock"></span>
+                                                                    <input class="uk-input uk-form-large" type="password" placeholder="Password">	
+                                                                </div>
+                                                            </div>
+                                                            <div class="uk-margin uk-text-right@s uk-text-center uk-text-small">
+                                                                <a href="#" uk-switcher-item="2">Forgot Password?</a>
+                                                            </div>
+                                                            <div class="uk-margin">
+                                                                <button class="uk-button uk-button-primary uk-button-large uk-width-1-1">Login</button>
+                                                            </div>
+                                                            <div class="uk-text-small uk-text-center">
+                                                                Not registered? <a href="#" uk-switcher-item="0">Create an account</a>
+                                                            </div>
+                                                        </form>
+                                                    </li>
+                                                    <li>
+                                                        <h3 class="uk-card-title uk-text-center">Forgot your password?</h3>
+                                                        <p class="uk-text-center uk-width-medium@s uk-margin-auto">Enter your email address and we will send you a link to reset your password.</p>
+                                                        <form>
+                                                            <div class="uk-margin">
+                                                                <div class="uk-inline uk-width-1-1">
+                                                                    <span class="uk-form-icon" uk-icon="icon: mail"></span>
+                                                                    <input class="uk-input uk-form-large" type="text" placeholder="Email address">
+                                                                </div>
+                                                            </div>
+                                                            <div class="uk-margin">
+                                                                <button class="uk-button uk-button-primary uk-button-large uk-width-1-1">Send Email</button>
+                                                            </div>
+                                                            <div class="uk-text-small uk-text-center">
+                                                                <a href="#" uk-switcher-item="1">Back to login</a>
+                                                            </div>
+                                                        </form>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                            </div>
+                        <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+                            <!-- <div class="uk-background-cover" style="background-image: url('images/photo.jpg');" uk-height-viewport></div> -->
+                            <div class="uk-padding-medium">
+                                <!--  -->
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -49,61 +159,79 @@
                                     </button>
                                 </div>
                                 <div>
-                                    <button class="uk-button uk-button-default">Filtrer</button>
+                                    <a class="uk-button uk-button-default" href="#modal-center" uk-toggle>Filtrer</a>
+                                </div>
+                                <div id="modal-center" class="uk-flex-top" uk-modal>
+                                    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+                                
+                                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                                
+                                        <ul uk-tab>
+                                            <li><a href="#">Distance</a></li>
+                                            <li><a href="#">Budget</a></li>
+                                            <li><a href="#">Type</a></li>
+                                            <li><a href="#">Consommation</a></li>
+                                        </ul>
+
+                                        <ul class="uk-switcher uk-margin">
+                                            <li>
+                                                <div class="uk-container uk-margin">
+                                                    <div class="uk-card uk-card-default uk-card-body uk-height-medium">
+                                                        <h3 class="uk-card-title">Distance</h3>
+                                                        <label><input class="uk-radio" onclick="setPerimeter()" type="radio" name="perimeter" data-perimeter-radio="" value="0" checked> Indifférent</label><br>
+                                                        <label><input class="uk-radio" onclick="setPerimeter()" type="radio" name="perimeter" data-perimeter-radio="" value="1" > 5 minutes</label><br>
+                                                        <label><input class="uk-radio" onclick="setPerimeter()" type="radio" name="perimeter" data-perimeter-radio="" value="2"> 10 minutes</label><br>
+                                                        <label><input class="uk-radio" onclick="setPerimeter()" type="radio" name="perimeter" data-perimeter-radio="" value="3"> 15 minutes</label><br>
+                                                    </div>                    
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="uk-container uk-margin">
+                                                    <div class="uk-card uk-card-default uk-card-body uk-height-medium">
+                                                        <h3 class="uk-card-title">Budget</h3>
+                                                        <label><input class="uk-radio" onclick="setPrice()" type="radio" name="price" data-price-radio="" value="0" checked> Indifférent</label><br>
+                                                        <label><input class="uk-radio" onclick="setPrice()" type="radio" name="price" data-price-radio="" value="1"> $</label><br>
+                                                        <label><input class="uk-radio" onclick="setPrice()" type="radio" name="price" data-price-radio="" value="2"> $$</label><br>
+                                                        <label><input class="uk-radio" onclick="setPrice()" type="radio" name="price" data-price-radio="" value="3"> $$$</label><br>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="uk-container uk-margin">
+                                                    <div class="uk-card uk-card-default uk-card-body uk-height-medium">
+                                                        <h3 class="uk-card-title">Type</h3>
+                                                        <form action="">
+                                                            <label><input class="uk-radio" onclick="setType()" type="radio" name="type" data-type-radio="" value="0" checked> Indifférent</label><br>
+                                                            <label><input class="uk-radio" onclick="setType()" type="radio" name="type" data-type-radio="" value="1"> Indien</label><br>
+                                                            <label><input class="uk-radio" onclick="setType()" type="radio" name="type" data-type-radio="" value="2"> Végétarien</label><br>
+                                                            <label><input class="uk-radio" onclick="setType()" type="radio" name="type" data-type-radio="" value="3"> Fast-food</label><br>
+                                                            <label><input class="uk-radio" onclick="setType()" type="radio" name="type" data-type-radio="" value="4"> Italien</label><br>
+                                                            <label><input class="uk-radio" onclick="setType()" type="radio" name="type" data-type-radio="" value="5"> Chinois</label><br>
+                                                            <label><input class="uk-radio" onclick="setType()" type="radio" name="type" data-type-radio="" value="6"> Autre</label><br>
+                                                        </form>
+                                                    </div>
+                                                </div> 
+                                            </li>
+                                            <li>
+                                                <div class="uk-container uk-margin">
+                                                    <div class="uk-card uk-card-default uk-card-body uk-height-medium">
+                                                        <h3 class="uk-card-title">Consommation</h3>
+                                                        <form action="">
+                                                            <label><input class="uk-radio" onclick="setMode()" type="radio" name="mode" data-mode-radio="" value="3" checked> Indifférent</label><br>
+                                                            <label><input class="uk-radio" onclick="setMode()" type="radio" name="mode" data-mode-radio="" value="1"> Sur place</label><br>
+                                                            <label><input class="uk-radio" onclick="setMode()" type="radio" name="mode" data-mode-radio="" value="2"> À emporter</label><br>
+                                                        </form>
+                                                    </div>
+                                                </div>                                
+                                            </li>
+                                        </ul>                                
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                 </div>
-
-
-                <div class="uk-container uk-margin">
-                    <div class="uk-card uk-card-default uk-card-body uk-height-medium">
-                        <h3 class="uk-card-title">Périmètre</h3>
-                        <label><input class="uk-radio" onclick="setPerimeter()" type="radio" name="perimeter" data-perimeter-radio="" value="0" checked> Indifférent</label><br>
-                        <label><input class="uk-radio" onclick="setPerimeter()" type="radio" name="perimeter" data-perimeter-radio="" value="1" > 5 minutes</label><br>
-                        <label><input class="uk-radio" onclick="setPerimeter()" type="radio" name="perimeter" data-perimeter-radio="" value="2"> 10 minutes</label><br>
-                        <label><input class="uk-radio" onclick="setPerimeter()" type="radio" name="perimeter" data-perimeter-radio="" value="3"> 15 minutes</label><br>
-                    </div>                    
-                </div>
-
-                <div class="uk-container uk-margin">
-                    <div class="uk-card uk-card-default uk-card-body uk-height-medium">
-                        <h3 class="uk-card-title">Prix</h3>
-                        <label><input class="uk-radio" onclick="setPrice()" type="radio" name="price" data-price-radio="" value="0" checked> Indifférent</label><br>
-                        <label><input class="uk-radio" onclick="setPrice()" type="radio" name="price" data-price-radio="" value="1"> $</label><br>
-                        <label><input class="uk-radio" onclick="setPrice()" type="radio" name="price" data-price-radio="" value="2"> $$</label><br>
-                        <label><input class="uk-radio" onclick="setPrice()" type="radio" name="price" data-price-radio="" value="3"> $$$</label><br>
-                    </div>
-                </div>
-                
-                <div class="uk-container uk-margin">
-                    <div class="uk-card uk-card-default uk-card-body uk-height-medium">
-                        <h3 class="uk-card-title">type</h3>
-                        <form action="">
-                            <label><input class="uk-radio" onclick="setType()" type="radio" name="type" data-type-radio="" value="0" checked> Indifférent</label><br>
-                            <label><input class="uk-radio" onclick="setType()" type="radio" name="type" data-type-radio="" value="1"> Indien</label><br>
-                            <label><input class="uk-radio" onclick="setType()" type="radio" name="type" data-type-radio="" value="2"> Végétarien</label><br>
-                            <label><input class="uk-radio" onclick="setType()" type="radio" name="type" data-type-radio="" value="3"> Fast-food</label><br>
-                            <label><input class="uk-radio" onclick="setType()" type="radio" name="type" data-type-radio="" value="4"> Italien</label><br>
-                            <label><input class="uk-radio" onclick="setType()" type="radio" name="type" data-type-radio="" value="5"> Chinois</label><br>
-                            <label><input class="uk-radio" onclick="setType()" type="radio" name="type" data-type-radio="" value="6"> Autre</label><br>
-                        </form>
-                    </div>
-                </div> 
- 
-                <div class="uk-container uk-margin">
-                    <div class="uk-card uk-card-default uk-card-body uk-height-medium">
-                        <h3 class="uk-card-title">Consommation</h3>
-                        <form action="">
-                            <label><input class="uk-radio" onclick="setMode()" type="radio" name="mode" data-mode-radio="" value="3" checked> Indifférent</label><br>
-                            <label><input class="uk-radio" onclick="setMode()" type="radio" name="mode" data-mode-radio="" value="1"> Sur place</label><br>
-                            <label><input class="uk-radio" onclick="setMode()" type="radio" name="mode" data-mode-radio="" value="2"> À emporter</label><br>
-                        </form>
-                    </div>
-                </div>
-
                 <!-- data-perimeter="1" -> 1 = 5 minutes; 2 = 10 minutes; 3 = 15 minutes -->
                 <!-- data-price="1" -> 1 = $; 2 = $$; 3 = $$$ -->
                 <!-- data-type -> 1=Indian; 2=Vegetarien; 3=Fast-food; 4=Italien; 5=Chinois 9=Autre -->

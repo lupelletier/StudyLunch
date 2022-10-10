@@ -165,6 +165,19 @@ h3{
     color: black;
 }
 
+.half-modal{
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 /* 1400px, 1100px, 1023px, 767px */
 /* @media screen and (max-width: 1400px) {
     body {

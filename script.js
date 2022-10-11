@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     let send = document.getElementById('submit-2')
 
     submit.addEventListener('click', function () {
-        alert('Bonjour '+ username.value+' vous êtes connecté !')
+        alert('Bonjour '+username.value+' vous êtes connecté !')
         console.log(username.value)
     })
     send.addEventListener('click', function () {

@@ -75,11 +75,19 @@ h2 {
 
 h3 {
     font-family: 'poppins', sans-serif;
-
     margin-top: -10px;
     padding-bottom: 10px;
 }
 
+h4 {
+    font-family: 'Amatic SC', cursive;
+    font-style: bold;
+    font-size: 70px;
+}
+p {
+    font-family: 'poppins', sans-serif;
+    font-size: 20px;
+}
 #icon-map {
     max-width: 25px;
 }
@@ -94,7 +102,31 @@ h3 {
     border-radius: 10px;
 
 }
+.button-connection{
+    background-color: #354F52;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 1opx 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 1px;
+    cursor: pointer;
+    hover: #354F52;
+    font-family: 'poppins', sans-serif;
+}
+.color {
+    color: #589170;
+}
+.color:hover {
+    color: #354F52;
+}
+.button-connection:hover{
+    background-color: #4a755b;
 
+}
 #separation {
     margin-top: 70px;
     margin-bottom: 80px;

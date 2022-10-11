@@ -1,7 +1,7 @@
 window.addEventListener("DOMContentLoaded", (event) => {
 
     let submit = document.getElementById('submit')
-    let name = document.getElementById('username')
+    let username = document.getElementById('username')
     let form = document.getElementById('username-2')
     let send = document.getElementById('submit-2')
 

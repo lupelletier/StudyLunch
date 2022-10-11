@@ -61,17 +61,17 @@
                 </a>
                 
 
-                <div id="modal-full" class="uk-modal-full" uk-modal>
-                    <div class="uk-modal-dialog half-modal">
+                <div id="modal-full" class="uk-modal-quarter" uk-modal>
+                    <div class="">
                         <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
                         <div class="uk-section uk-section-muted uk-flex uk-flex-left uk-animation-fade" uk-height-viewport>
-                            <div class="uk-width-1-1">
-                                <div class="uk-container">
-                                    <div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid>
-                                        <div >
+                            <div class="uk-container uk-position-right uk-overlay uk-overlay-default ">
+                                <div class="">
+                                    <div class="uk-grid-margin uk-grid uk-grid-stack uk-width-1-1" uk-grid>
+                                        <div>
                                             <form class="uk-margin uk-width-large uk-margin-auto uk-card uk-card-default uk-card-body uk-box-shadow-large">
                                                 <ul class="uk-tab uk-flex-center" uk-grid uk-switcher="animation: uk-animation-fade">
-                                                    <li><a href="#">Sign Up</a></li>
+                            Sign Up</a></li>
                                                     <li><a href="#">Log In</a></li>
                                                     <li class="uk-hidden">Forgot Password?</li>
                                                 </ul>
@@ -192,53 +192,56 @@
                                 
                                         <button class="uk-modal-close-default" type="button" uk-close></button>
                                 
-                                        <ul uk-tab>
-                                            <li><a href="#">Distance</a></li>
-                                            <li><a href="#">Budget</a></li>
-                                            <li><a href="#">Type</a></li>
-                                            <li><a href="#">Consommation</a></li>
+                                        <ul uk-tab uk-subnav uk-switcher>
+                                            <li id="distance" ><a href="#distance">Distance</a></li>
+                                            <li id="budget" ><a href="#budget">Budget</a></li>
+                                            <li id="type"><a href="#type">Type</a></li>
+                                            <li id="consommation"><a href="#consommation">Consommation</a></li>
                                         </ul>
 
-                                        <ul class="uk-switcher uk-margin">
+                                        <ul class="uk-switcher uk-margin" id="switch-filter"  uk-switcher-item="distance">
                                             <li>
-                                                <div class="uk-container uk-margin">
-                                                    <div class="uk-card uk-card-default uk-card-body uk-height-medium">
-                                                        <h3 class="uk-card-title">Distance</h3>
-                                                        <label><input class="uk-radio" onclick="setPerimeter()" type="radio" name="perimeter" data-perimeter-radio="" value="0" checked> Indifférent</label><br>
-                                                        <label><input class="uk-radio" onclick="setPerimeter()" type="radio" name="perimeter" data-perimeter-radio="" value="1" > 5 minutes</label><br>
-                                                        <label><input class="uk-radio" onclick="setPerimeter()" type="radio" name="perimeter" data-perimeter-radio="" value="2"> 10 minutes</label><br>
-                                                        <label><input class="uk-radio" onclick="setPerimeter()" type="radio" name="perimeter" data-perimeter-radio="" value="3"> 15 minutes</label><br>
-                                                    </div>                    
-                                                </div>
+                                                <a href="#" uk-switcher-item="1">
+                                                    <div class="uk-container uk-margin" >
+                                                        <div class="uk-card uk-card-default uk-card-body uk-height-medium"  >
+                                                            <a href="#"></a> 
+                                                            <h3 class="uk-card-title">Distance</h3>
+                                                            <label><a href="#" uk-switcher-item="1"><input class="uk-radio" onclick="setPerimeter()" type="radio" name="perimeter" data-perimeter-radio="" value="0" checked></a> Indifférent</label><br>
+                                                            <label><a href="#" uk-switcher-item="1"><input class="uk-radio" onclick="setPerimeter()" type="radio" name="perimeter" data-perimeter-radio="" value="1" ></a> 5 minutes</label><br>
+                                                            <label><a href="#" uk-switcher-item="1"><input class="uk-radio" onclick="setPerimeter()" type="radio" name="perimeter" data-perimeter-radio="" value="2"></a> 10 minutes</label><br>
+                                                            <label><a href="#" uk-switcher-item="1"><input class="uk-radio" onclick="setPerimeter()" type="radio" name="perimeter" data-perimeter-radio="" value="3"></a> 15 minutes</label><br>
+                                                        </div>                    
+                                                    </div>
+                                                </a>
                                             </li>
-                                            <li>
+                                            <li id="budget">
                                                 <div class="uk-container uk-margin">
                                                     <div class="uk-card uk-card-default uk-card-body uk-height-medium">
                                                         <h3 class="uk-card-title">Budget</h3>
-                                                        <label><input class="uk-radio" onclick="setPrice()" type="radio" name="price" data-price-radio="" value="0" checked> Indifférent</label><br>
-                                                        <label><input class="uk-radio" onclick="setPrice()" type="radio" name="price" data-price-radio="" value="1"> $</label><br>
-                                                        <label><input class="uk-radio" onclick="setPrice()" type="radio" name="price" data-price-radio="" value="2"> $$</label><br>
-                                                        <label><input class="uk-radio" onclick="setPrice()" type="radio" name="price" data-price-radio="" value="3"> $$$</label><br>
+                                                        <label><a href="#" uk-switcher-item="2"><input class="uk-radio" onclick="setPrice()" type="radio" name="price" data-price-radio="" value="0" checked></a> Indifférent</label><br>
+                                                        <label><a href="#" uk-switcher-item="2"><input class="uk-radio" onclick="setPrice()" type="radio" name="price" data-price-radio="" value="1"></a> $</label><br>
+                                                        <label><a href="#" uk-switcher-item="2"><input class="uk-radio" onclick="setPrice()" type="radio" name="price" data-price-radio="" value="2"></a> $$</label><br>
+                                                        <label><a href="#" uk-switcher-item="2"><input class="uk-radio" onclick="setPrice()" type="radio" name="price" data-price-radio="" value="3"></a> $$$</label><br>
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li>
+                                            <li id="type">
                                                 <div class="uk-container uk-margin">
                                                     <div class="uk-card uk-card-default uk-card-body uk-height-medium">
                                                         <h3 class="uk-card-title">Type</h3>
                                                         <form action="">
-                                                            <label><input class="uk-radio" onclick="setType()" type="radio" name="type" data-type-radio="" value="0" checked> Indifférent</label><br>
-                                                            <label><input class="uk-radio" onclick="setType()" type="radio" name="type" data-type-radio="" value="1"> Indien</label><br>
-                                                            <label><input class="uk-radio" onclick="setType()" type="radio" name="type" data-type-radio="" value="2"> Végétarien</label><br>
-                                                            <label><input class="uk-radio" onclick="setType()" type="radio" name="type" data-type-radio="" value="3"> Fast-food</label><br>
-                                                            <label><input class="uk-radio" onclick="setType()" type="radio" name="type" data-type-radio="" value="4"> Italien</label><br>
-                                                            <label><input class="uk-radio" onclick="setType()" type="radio" name="type" data-type-radio="" value="5"> Chinois</label><br>
-                                                            <label><input class="uk-radio" onclick="setType()" type="radio" name="type" data-type-radio="" value="6"> Autre</label><br>
+                                                            <label><a href="#" uk-switcher-item="3"></a><input class="uk-radio" onclick="setType()" type="radio" name="type" data-type-radio="" value="0" checked></a> Indifférent</label><br>
+                                                            <label><a href="#" uk-switcher-item="3"></a><input class="uk-radio" onclick="setType()" type="radio" name="type" data-type-radio="" value="1"></a> Indien</label><br>
+                                                            <label><a href="#" uk-switcher-item="3"></a><input class="uk-radio" onclick="setType()" type="radio" name="type" data-type-radio="" value="2"></a> Végétarien</label><br>
+                                                            <label><a href="#" uk-switcher-item="3"></a><input class="uk-radio" onclick="setType()" type="radio" name="type" data-type-radio="" value="3"></a> Fast-food</label><br>
+                                                            <label><a href="#" uk-switcher-item="3"></a><input class="uk-radio" onclick="setType()" type="radio" name="type" data-type-radio="" value="4"></a> Italien</label><br>
+                                                            <label><a href="#" uk-switcher-item="3"></a><input class="uk-radio" onclick="setType()" type="radio" name="type" data-type-radio="" value="5"></a> Chinois</label><br>
+                                                            <label><a href="#" uk-switcher-item="3"></a><input class="uk-radio" onclick="setType()" type="radio" name="type" data-type-radio="" value="6"></a> Autre</label><br>
                                                         </form>
                                                     </div>
                                                 </div> 
                                             </li>
-                                            <li>
+                                            <li id="consommation">
                                                 <div class="uk-container uk-margin">
                                                     <div class="uk-card uk-card-default uk-card-body uk-height-medium">
                                                         <h3 class="uk-card-title">Consommation</h3>
@@ -247,10 +250,16 @@
                                                             <label><input class="uk-radio" onclick="setMode()" type="radio" name="mode" data-mode-radio="" value="1"> Sur place</label><br>
                                                             <label><input class="uk-radio" onclick="setMode()" type="radio" name="mode" data-mode-radio="" value="2"> À emporter</label><br>
                                                         </form>
+                                                        
+                                                        <div class="uk-position-bottom uk-overlay uk-overlay-default uk-text-center">
+                                                            <button class="uk-modal-close-default uk-button uk-button-default" type="button">Résultats</button>                            
+
+                                                        </div>
+                                            
                                                     </div>
                                                 </div>                                
                                             </li>
-                                        </ul>                                
+                                        </ul>
                                     </div>
                                 </div>
                             </div>

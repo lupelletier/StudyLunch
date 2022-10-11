@@ -1,5 +1,5 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
     background-color: #CAD2C5;
@@ -34,12 +34,12 @@ body {
     margin-top: -15px;
 }
 
-.title h3{
+.title h3 {
     font-size: 25px;
     font-size: 20px;
 }
 
-.logo{
+.logo {
     width: 90px;
     height: 90px;
 }
@@ -56,6 +56,11 @@ body {
     margin-left: 10px;
 }
 
+#background-cover {
+    backdrop-filter: blur(3px) brightness(67%);
+    border-radius: 10px;
+}
+
 h1 {
     font-family: 'Amatic SC', cursive;
     font-size: 50px;
@@ -67,41 +72,46 @@ h2 {
     font-style: bold;
     font-size: 30px;
 }
-h3{
+
+h3 {
     font-family: 'poppins', sans-serif;
 
     margin-top: -10px;
     padding-bottom: 10px;
 }
 
-#icon-map{
+#icon-map {
     max-width: 25px;
 }
-.card{
+
+.card {
     border-radius: 10px;
 
 }
-#background-cover{
+
+#background-cover {
     backdrop-filter: blur(3px) brightness(67%);
     border-radius: 10px;
 
 }
-#separation{
+
+#separation {
     margin-top: 70px;
     margin-bottom: 80px;
-    
+
 }
-#button{
+
+#button {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     width: 100%;
     margin: auto;
-   
+
 }
 
 /* COMPTE */
 
-.formulaire{
+.formulaire {
     display: none;
     background-color: white;
     width: 30%;
@@ -110,13 +120,16 @@ h3{
     float: right;
     text-align: center;
 }
-.formulaire h2{
+
+.formulaire h2 {
     margin-top: 50px;
 }
-.sign-up{
+
+.sign-up {
     margin: 50px;
 }
-.sign-up a{
+
+.sign-up a {
     margin-left: 20px;
 }
 
@@ -125,36 +138,41 @@ h3{
 
 
 /* liste de restaurants */
-
-.uk-container {
-    background-color: #354F52;
-    border-radius: 15px;
-    width: 70%;
-}
-    .box {
-        width: 90%;
-    }
-.box br{
-    margin:2px;
-}
-.box img{
-   width: 230px;
-   height: 170px;
-}
-.uk-card-body{
+.box {
     width: 100%;
-    }
+    background-color: #354F52;
+    margin: 15px;
+    border-radius: 15px;
+}
 
+.box br {
+    margin: 2px;
+}
+
+.box img {
+    width: 230px;
+    height: 170px;
+}
+
+.uk-card-body {
+    width: 100%;
+}
+
+#uk-flex {
+    width: 100%;
+}
 
 /* SECTION MAP */
 .map-section {
     display: flex;
     flex-direction: column;
 }
-.maps{
+
+.maps {
     text-align: center;
     margin: 50px;
 }
+
 .map {
     width: 50%;
 }
@@ -170,7 +188,7 @@ h3{
     max-height: 200px;
     margin: 25px;
     display: flex;
-    border: solid black;
+    border: solid 0.2px black;
     border-radius: 15px;
     overflow: hidden;
 }
@@ -178,7 +196,7 @@ h3{
 .restaurant img {
     width: 100%;
     height: 100%;
-    object-fit  : cover;
+    object-fit: cover;
 }
 
 .infos {
@@ -188,30 +206,39 @@ h3{
     padding-right: 8px;
     padding-top: 8px;
 }
-.infos h3{
-    font-weight: bolder;
+
+.infos h3 {
+    margin-top: 1px;
+    font-weight: bold;
+    color: black;
 }
-.title-star{
+
+.title-star {
     display: flex;
     justify-content: space-between;
     height: 25px;
 }
-.price-button{
+
+.price-button {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
-.button{
+
+.button {
     float: right;
     margin: 8px;
     background-color: #354F52;
-    border-radius: 10px;
+    border-radius: 30px;
     width: 100px;
     height: 35px;
     color: white;
     font-weight: bold;
+
     text-align: center;
+    padding-top: 5px;
 }
-.button:hover{
+
+.button:hover {
     color: black;
 }
 a{
@@ -219,17 +246,10 @@ a{
 
 }
 
-.half-modal{
-    width: 50%;
-    height: 50%;
-    background-color: white;
-    border-radius: 10px;
-    margin: auto;
-    margin-top: 100px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.star-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
 }
 
 /* 1400px, 1100px, 1023px, 767px */

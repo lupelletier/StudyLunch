@@ -11,403 +11,496 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.10/dist/js/uikit-icons.min.js"></script>
     <script src="js/uikit.min.js"></script>
     <script src="script.js"></script>
-    <scrip src="js/uikit-icons.min.js">
-        </script>
+    <script src="js/uikit-icons.min.js"></script>
         <title>Study-lunch</title>
 </head>
 
 <body>
-
-
-    <div>
-
-        <header>
-            <div class="header">
-                <div>
-                    <img class="logo" src="logo.png" alt="logo">
+    <header>
+        <div  class="header">
+            <!-- HEADER -->
+            <div class="uk-margin-auto@m">
+                <img class="logo uk-margin-auto@s uk-margin-auto@m" src="logo.png" alt="logo">
+            </div>
+            <div class="title">
+                <h1 class="uk-heading-line uk-text-center uk-margin-auto@m"><span>Study Lunch</span></h1>
+                <h2 class="uk-text-center uk-margin-auto@m">-MDS-</h2>
+                <h3 class="uk-text-center uk-margin-auto@m">-Trouver où luncher, avec simplicité -</h3>
+            </div>
+            <!-- BOUTTON COMPTE -->
+            <a href="#modal-full" uk-toggle="target: #modal-full; cls: uk-hidden" class="account-box" uk-toggle>
+                <div class="account-box uk-margin-auto@m">
+                    <img class="account" src="icon-utilisateur.png" alt="compte">
                 </div>
-                <div class="title">
-                    <h1 class="uk-heading-line uk-text-center"><span>Study Lunch</span></h1>
-                    <h2 class="uk-text-center">-MDS-</h2>
-                    <h3 class="uk-text-center">-Trouver où luncher, avec simplicité -</h3>
-                </div>
-                <!-- Login form -->
-                <a href="#modal-full" uk-toggle="target: #modal-full; cls: uk-hidden" class="account-box" uk-toggle>
-                    <div class="account-box">
-                        <img class="account" src="icon-utilisateur.png" alt="compte">
-                    </div>
-                </a>
+            </a>
 
-                <!-- Login Div -->
-                <div>
-                    
-                    <div id="modal-full" class=" uk-hidden  uk-animation-fade uk-position-right uk-overlay" uk-height-viewport>
-                        <!-- <div class="uk-width-1-1"> -->
-                            <div class="">
-                                <div >
-                                    <div class="uk-width-1-1@m">
-                                        <form class="uk-width-large  uk-card uk-card-default uk-card-body uk-box-shadow-large">
-                                            <a href="#" uk-toggle="target: #modal-full; animation: uk-animation-fade; cls: uk-hidden" class="uk-icon-link" uk-icon="close"></a>
-                                            <ul class="uk-tab uk-flex-center" uk-grid uk-switcher="animation: uk-animation-fade">
-                                                <li><a href="#">s'inscrire</a></li>
-                                                <li><a href="#">Se connecter</a></li>
-                                                <li class="uk-hidden">Mot de passe oublié ?</li>
-                                            </ul>
-                                            <ul class="uk-switcher uk-margin">
-                                                <li>
-                                                    <h4 class="uk-card-title uk-text-center ">Inscrivez-vous, c'est gratuit !</h4>
-                                                    <form>
-                                                        <div class="uk-margin">
-                                                            <div class="uk-inline uk-width-1-1">
-                                                                <span class="uk-form-icon" uk-icon="icon: user"></span>
-                                                                <input id="username" class="uk-input uk-form-large" type="text" placeholder="Nom d'utilisateur">
-                                                            </div>
-                                                        </div>
-                                                        <div class="uk-margin">
-                                                            <div class="uk-inline uk-width-1-1">
-                                                                <span class="uk-form-icon" uk-icon="icon: mail"></span>
-                                                                <input class="uk-input uk-form-large" type="text" placeholder="Adresse email">
-                                                            </div>
-                                                        </div>
-                                                        <div class="uk-margin">
-                                                            <div class="uk-inline uk-width-1-1">
-                                                                <span class="uk-form-icon" uk-icon="icon: lock"
-                                                                uk-icon="icon: user"></span>
-                                                                <input  class="uk-input uk-form-large" type="text" placeholder="Mot de passe">                                                            </div>
-                                                        </div>
-                                                        <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
-                                                            <label><input class="uk-checkbox" type="checkbox"> J'accepte les conditions d'utilisation</label>
-                                                        </div>
-                                                        <div class="uk-margin">
-                                                            <button id="submit"class="uk-button uk-button-primary uk-button-large uk-width-1-1 button-connection">Connection</button>
-                                                        </div>
-                                                        <div class="uk-text-small uk-text-center">
-                                                            Déjà inscrit ?<a href="#" uk-switcher-item="1" class="color" > Se connecter</a>
-                                                        </div>
-                                                    </form>
-                                                </li>
-                                                <li>
-                                                    <h4 class="uk-card-title uk-text-center">Content de vous revoir !</h4>
-                                                    <form>
-                                                        <div class="uk-margin">
-                                                            <div class="uk-inline uk-width-1-1">
-                                                                <span class="uk-form-icon" uk-icon="icon: mail"></span>
-                                                                <input id="username-2" class="uk-input uk-form-large" type="text" placeholder="Email address">
-                                                            </div>
-                                                        </div>
-                                                        <div class="uk-margin">
-                                                            <div class="uk-inline uk-width-1-1">
-                                                                <span class="uk-form-icon" uk-icon="icon: lock"></span>
-                                                                <input class="uk-input uk-form-large" type="password" placeholder="Password">	
-                                                            </div>
-                                                        </div>
-                                                        <div class="uk-margin uk-text-right@s uk-text-center uk-text-small">
-                                                            <a href="#" uk-switcher-item="2" class="color" >Mot de passe oublié ?</a>
-                                                        </div>
-                                                        <div class="uk-margin">
-                                                            <button id="submit-2"class="button-connection uk-button uk-button-primary uk-button-large uk-width-1-1">Connection</button>
-                                                        </div>
-                                                        <div class=" uk-text-small uk-text-center">
-                                                        
-                                                           Pas encore de compte ? <a class="color" href="#" uk-switcher-item="0">S'inscrire</a>
-                                                        </div>
-                                                    </form>
-                                                </li>
-                                                <li>
-                                                    <h3 class="uk-card-title uk-text-center">Mot de passe oublie ?</h3>
-                                                    <p class="uk-text-center uk-width-medium@s uk-margin-auto">Entrez votre Email pour le réinitialiser</p>
-                                                    <form>
-                                                        <div class="uk-margin">
-                                                            <div class="uk-inline uk-width-1-1">
-                                                                <span class="uk-form-icon" uk-icon="icon: mail"></span>
-                                                                <input class="uk-input uk-form-large" type="text" placeholder="Email address">
-                                                            </div>
-                                                        </div>
-                                                        <div class="uk-margin">
-                                                            <button class="uk-button uk-button-primary uk-button-large uk-width-1-1">Confirmer</button>
-                                                        </div>
-                                                        <div class="uk-text-small uk-text-center">
-                                                            <a href="#" uk-switcher-item="1">Se connecter</a>
-                                                        </div>
-                                                    </form>
-                                                </li>
-                                            </ul>
+            <!-- DIV LOGIN -->
+            <div id="modal-full" class=" uk-hidden  uk-animation-fade uk-position-right uk-overlay" uk-height-viewport>
+                <div class="">
+
+                    <div class="uk-width-1-1@m">
+                        <form class="uk-width-large  uk-card uk-card-default uk-card-body uk-box-shadow-large">
+                            <a href="#" uk-toggle="target: #modal-full; animation: uk-animation-fade; cls: uk-hidden" class="uk-icon-link" uk-icon="close"></a>
+                            <ul class="uk-tab uk-flex-center" uk-grid uk-switcher="animation: uk-animation-fade">
+                                <li><a href="#">s'inscrire</a></li>
+                                <li><a href="#">Se connecter</a></li>
+                                <li class="uk-hidden">Mot de passe oublié ?</li>
+                            </ul>
+                            <ul class="uk-switcher uk-margin">
+                                <li>
+                                    <h4 class="uk-card-title uk-text-center ">Inscrivez-vous, c'est gratuit !</h4>
+                                    <form>
+                                        <div class="uk-margin">
+                                            <div class="uk-inline uk-width-1-1">
+                                                <span class="uk-form-icon" uk-icon="icon: user"></span>
+                                                <input id="username" class="uk-input uk-form-large" type="text" placeholder="Nom d'utilisateur">
+                                            </div>
                                         </div>
-                                    </div>
+                                        <div class="uk-margin">
+                                            <div class="uk-inline uk-width-1-1">
+                                                <span class="uk-form-icon" uk-icon="icon: mail"></span>
+                                                <input class="uk-input uk-form-large" type="text" placeholder="Adresse email">
+                                            </div>
+                                        </div>
+                                        <div class="uk-margin">
+                                            <div class="uk-inline uk-width-1-1">
+                                                <span class="uk-form-icon" uk-icon="icon: lock"
+                                                uk-icon="icon: user"></span>
+                                                <input  class="uk-input uk-form-large" type="text" placeholder="Mot de passe">                                                            </div>
+                                        </div>
+                                        <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                                            <label><input class="uk-checkbox" type="checkbox"> J'accepte les conditions d'utilisation</label>
+                                        </div>
+                                        <div class="uk-margin">
+                                            <button id="submit"class="uk-button uk-button-primary uk-button-large uk-width-1-1 button-connection uk-margin-auto@s">Connection</button>
+                                        </div>
+                                        <div class="uk-text-small uk-text-center">
+                                            Déjà inscrit ?<a href="#" uk-switcher-item="1" class="color" > Se connecter</a>
+                                        </div>
+                                    </form>
+                                </li>
+                                <li>
+                                    <h4 class="uk-card-title uk-text-center">Content de vous revoir !</h4>
+                                    <form>
+                                        <div class="uk-margin">
+                                            <div class="uk-inline uk-width-1-1">
+                                                <span class="uk-form-icon" uk-icon="icon: mail"></span>
+                                                <input id="username-2" class="uk-input uk-form-large" type="text" placeholder="Email address">
+                                            </div>
+                                        </div>
+                                        <div class="uk-margin">
+                                            <div class="uk-inline uk-width-1-1">
+                                                <span class="uk-form-icon" uk-icon="icon: lock"></span>
+                                                <input class="uk-input uk-form-large" type="password" placeholder="Password">	
+                                            </div>
+                                        </div>
+                                        <div class="uk-margin uk-text-right@s uk-text-center uk-text-small">
+                                            <a href="#" uk-switcher-item="2" class="color" >Mot de passe oublié ?</a>
+                                        </div>
+                                        <div class="uk-margin">
+                                            <button id="submit-2"class="button-connection uk-button uk-button-primary uk-button-large uk-width-1-1">Connection</button>
+                                        </div>
+                                        <div class=" uk-text-small uk-text-center">
+                                        
+                                           Pas encore de compte ? <a class="color" href="#" uk-switcher-item="0">S'inscrire</a>
+                                        </div>
+                                    </form>
+                                </li>
+                                <li>
+                                    <h3 class="uk-card-title uk-text-center">Mot de passe oublie ?</h3>
+                                    <p class="uk-text-center uk-width-medium@s uk-margin-auto">Entrez votre Email pour le réinitialiser</p>
+                                    <form>
+                                        <div class="uk-margin">
+                                            <div class="uk-inline uk-width-1-1">
+                                                <span class="uk-form-icon" uk-icon="icon: mail"></span>
+                                                <input class="uk-input uk-form-large" type="text" placeholder="Email address">
+                                            </div>
+                                        </div>
+                                        <div class="uk-margin">
+                                            <button class="uk-button uk-button-primary uk-button-large uk-width-1-1">Confirmer</button>
+                                        </div>
+                                        <div class="uk-text-small uk-text-center">
+                                            <a href="#" uk-switcher-item="1">Se connecter</a>
+                                        </div>
+                                    </form>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ACCEUIL -->
+        <section>
+
+            <div class="box-image uk-container">
+                <div class="background-image uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-background-blend-darken"
+                    data-src="image-fond.jpg" uk-img>
+                    <div id="background-cover" class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-width-1-1">
+                        <div id="button" class="uk-flex uk-flex-center uk-flex-middle uk-flex-between uk-child-width-1-4 uk-grid">
+
+                                <a id="gotomap" class="uk-flex-center@s uk-button-group uk-button uk-button-default uk-icon-link uk-flex-around" href="#map">
+                                    <img id="icon-map" class="" src="icon-map.png" alt="">
+                                    Restaurants
+                                </a>
+                                <a class="uk-button uk-button-default" href="#filters" uk-toggle>Filtrer</a>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- FILTRES-->
+        <section>
+
+            <div id="filters" class="uk-flex-top" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+                    <button class="uk-modal-close-default" type="button" uk-close></button>
+                    <ul uk-tab uk-subnav uk-switcher>
+                        <li id="distance" ><a href="#">Distance</a></li>
+                        <li id="budget" ><a href="#">Budget</a></li>
+                        <li id="type"><a href="#">Type</a></li>
+                        <li id="consommation"><a href="#">Consommation</a></li>
+                    </ul>
+                    <ul class="uk-switcher uk-margin">
+                        <li>
+                            <div class="uk-container uk-margin">
+                                <div class="uk-card uk-card-default uk-card-body uk-height-medium">
+                                    <h4 class="uk-card-title">Distance</h4>
+                                    <label><a href="#" uk-switcher-item="1"><input class="uk-radio" onclick="setPerimeter()" type="radio"
+                                            name="perimeter" data-perimeter-radio="" value="0" checked></a>Indifférent
+                                        </label><br>
+                                    <label><a href="#" uk-switcher-item="1"><input class="uk-radio" onclick="setPerimeter()" type="radio"
+                                            name="perimeter" data-perimeter-radio="" value="1"></a> 5
+                                        minutes</label><br>
+                                    <label><a href="#" uk-switcher-item="1"><input class="uk-radio" onclick="setPerimeter()" type="radio"
+                                            name="perimeter" data-perimeter-radio="" value="2"></a> 10
+                                        minutes</label><br>
+                                    <label><a href="#" uk-switcher-item="1"><input class="uk-radio" onclick="setPerimeter()" type="radio"
+                                            name="perimeter" data-perimeter-radio="" value="3"></a>15
+                                        minutes</label><br>
                                 </div>
                             </div>
-                </div>
-                    <!-- </div> -->
-                </div>
-                <!--  -->
-
-               
-                    </div>
-                </div>
-                <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
-                    <!-- <div class="uk-background-cover" style="background-image: url('images/photo.jpg');" uk-height-viewport></div> -->
-                    <div class="uk-padding-medium">
-                        <!--  -->
-                    </div>
+                        </li>
+                        <li>
+                            <div class="uk-container uk-margin">
+                                <div class="uk-card uk-card-default uk-card-body uk-height-medium">
+                                    <h4 class="uk-card-title">Budget</h4>
+                                    <label><a href="#" uk-switcher-item="2"><input class="uk-radio" onclick="setPrice()" type="radio"
+                                            name="price" data-price-radio="" value="0" checked></a>
+                                        Indifférent</label><br>
+                                    <label><a href="#" uk-switcher-item="2"><input class="uk-radio" onclick="setPrice()" type="radio"
+                                            name="price" data-price-radio="" value="1"></a> $</label><br>
+                                    <label><a href="#" uk-switcher-item="2"><input class="uk-radio" onclick="setPrice()" type="radio"
+                                            name="price" data-price-radio="" value="2"></a> $$</label><br>
+                                    <label><a href="#" uk-switcher-item="2"><input class="uk-radio" onclick="setPrice()" type="radio"
+                                            name="price" data-price-radio="" value="3"></a> $$$</label><br>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-container uk-margin">
+                                <div class="uk-card uk-card-default uk-card-body uk-height-medium">
+                                    <h4 class="uk-card-title">Type</h4>
+                                    <form action="">
+                                        <label><a href="#" uk-switcher-item="3"><input class="uk-radio" onclick="setType()" type="radio"
+                                                name="type" data-type-radio="" value="0" checked>
+                                            Indifférent</label><br>
+                                        <label><a href="#" uk-switcher-item="3"><input class="uk-radio" onclick="setType()" type="radio"
+                                                name="type" data-type-radio="" value="1"></a> Indien</label><br>
+                                        <label><a href="#" uk-switcher-item="3"><input class="uk-radio" onclick="setType()" type="radio"
+                                                name="type" data-type-radio="" value="2"></a>
+                                            Végétarien</label><br>
+                                        <label><a href="#" uk-switcher-item="3"><input class="uk-radio" onclick="setType()" type="radio"
+                                                name="type" data-type-radio="" value="3"></a>
+                                            Fast-food</label><br>
+                                        <label><a href="#" uk-switcher-item="3"><input class="uk-radio" onclick="setType()" type="radio"
+                                                name="type" data-type-radio="" value="4"></a>
+                                            Italien</label><br>
+                                        <label><a href="#" uk-switcher-item="3"><input class="uk-radio" onclick="setType()" type="radio"
+                                                name="type" data-type-radio="" value="5"></a>
+                                            Chinois</label><br>
+                                        <label><a href="#" uk-switcher-item="3"><input class="uk-radio" onclick="setType()" type="radio"
+                                                name="type" data-type-radio="" value="6"></a> Autre</label><br>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-container uk-margin">
+                                <div class="uk-card uk-card-default uk-card-body uk-height-medium">
+                                    <h4 class="uk-card-title">Consommation</h4>
+                                    <form action="">
+                                        <label><input class="uk-radio" onclick="setMode()" type="radio"
+                                                name="mode" data-mode-radio="" value="3" checked>
+                                            Indifférent
+                                        </label><br>
+                                        <label><input class="uk-radio" onclick="setMode()" type="radio"
+                                                name="mode" data-mode-radio="" value="1"> Sur
+                                            place
+                                        </label><br>
+                                        <label><input class="uk-radio" onclick="setMode()" type="radio"
+                                                name="mode" data-mode-radio="" value="2"> À
+                                            emporter
+                                        </label><br>
+                                    </form>
+                                    <a class=" uk-margin-top uk-button uk-button-default uk-position-bottom- uk-overlay-default uk-text-center" href="#display-results" uk-toggle="target: #filters; animation: uk-animation-fade; cls: uk-hidden" class="uk-icon-link" >Résultats</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
-    </div>
-    </header>
-    <main>
-        <div data-my-filter="true" data-perimeter-filter-value="0" data-price-filter-value="0"
-            data-type-filter-value="0" data-mode-filter-value="3"></div>
+        </section>
 
-        <div class="box-image uk-container">
-            <div class="background-image uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-background-blend-darken"
-                data-src="image-fond.jpg" uk-img>
-                <div id="background-cover" class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-width-1-1">
-                    <div id="button" class="uk-flex uk-flex-center uk-flex-middle uk-flex-between	">
-                        <div class="uk-button-group">
-                            <button class="uk-button uk-button-default">
-                                <img id="icon-map" class="uk-width-1-4" src="icon-map.png" alt="">
-                                Voir les restaurants
-                            </button>
+
+        <!-- RESTAURANTS -->
+        <section>
+            <div class="text">
+                <div>
+                    <h2 class="uk-heading-line uk-text-center"><span>Les bons plans</span></h2>
+                </div>
+
+                <h3 class="uk-text-center">Nos étudiants vous partagent leurs restaurants <br>préférés pour déjeuner près de
+                    l'école</h3>
+            </div>
+            <div class="box-container">
+                <div class="cards-box">
+                    <div class="cards"class="uk-card-default">
+                        <div id="card">
+                            <div class="photos"><img src="mcdo.jpg" alt="photo restaurant"></div>
+                            <div class="infos">
+                                <div class="title-star">
+                                    <div>
+                                        <h3>Mc DO</h3>
+                                    </div>
+                                    <div class="star-icon"><img src="star(1).png" alt="add to favorite"></div>
+                                </div>
+                                <p>A emporter / Sur place<br>Proche de vous <br>Fast-food<br> $$</p>
+                            </div>
                         </div>
-                        <div>
-                            <a class="uk-button uk-button-default" href="#modal-center" uk-toggle>Filtrer</a>
+    
+                        <div id="card">
+                            <div class="photos"><img src="burger king.jpg" alt="photo restaurant"></div>
+                            <div class="infos">
+                                <div class="title-star">
+                                    <div>
+                                        <h3>Burger King</h3>
+                                    </div>
+                                    <div class="star-icon"><img src="star(1).png" alt="add to favorite"></div>
+                                </div>
+                                <p>A emporter / Sur place<br> loin <br>Fast-food<br> $$$</p>
+                            </div>
                         </div>
-                        <div id="modal-center" class="uk-flex-top" uk-modal>
-                            <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
-
-                                <button class="uk-modal-close-default" type="button" uk-close></button>
-
-                                <ul uk-tab uk-subnav uk-switcher>
-                                    <li id="distance" ><a href="#">Distance</a></li>
-                                    <li id="budget" ><a href="#">Budget</a></li>
-                                    <li id="type"><a href="#">Type</a></li>
-                                    <li id="consommation"><a href="#consommation">Consommation</a></li>
-                                </ul>
-
-                                <ul class="uk-switcher uk-margin">
-                                    <li>
-                                        <div class="uk-container uk-margin">
-                                            <div class="uk-card uk-card-default uk-card-body uk-height-medium">
-                                                <h3 class="uk-card-title">Distance</h3>
-                                                <label><a href="#" uk-switcher-item="1"><input class="uk-radio" onclick="setPerimeter()" type="radio"
-                                                        name="perimeter" data-perimeter-radio="" value="0" checked></a>
-                                                    Indifférent</label><br>
-                                                <label><a href="#" uk-switcher-item="1"><input class="uk-radio" onclick="setPerimeter()" type="radio"
-                                                        name="perimeter" data-perimeter-radio="" value="1"></a> 5
-                                                    minutes</label><br>
-                                                <label><a href="#" uk-switcher-item="1"><input class="uk-radio" onclick="setPerimeter()" type="radio"
-                                                        name="perimeter" data-perimeter-radio="" value="2"></a> 10
-                                                    minutes</label><br>
-                                                <label><a href="#" uk-switcher-item="1"><input class="uk-radio" onclick="setPerimeter()" type="radio"
-                                                        name="perimeter" data-perimeter-radio="" value="3"></a>15
-                                                    minutes</label><br>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="uk-container uk-margin">
-                                            <div class="uk-card uk-card-default uk-card-body uk-height-medium">
-                                                <h3 class="uk-card-title">Budget</h3>
-                                                <label><a href="#" uk-switcher-item="2"><input class="uk-radio" onclick="setPrice()" type="radio"
-                                                        name="price" data-price-radio="" value="0" checked></a>
-                                                    Indifférent</label><br>
-                                                <label><a href="#" uk-switcher-item="2"><input class="uk-radio" onclick="setPrice()" type="radio"
-                                                        name="price" data-price-radio="" value="1"></a> $</label><br>
-                                                <label><a href="#" uk-switcher-item="2"><input class="uk-radio" onclick="setPrice()" type="radio"
-                                                        name="price" data-price-radio="" value="2"></a> $$</label><br>
-                                                <label><a href="#" uk-switcher-item="2"><input class="uk-radio" onclick="setPrice()" type="radio"
-                                                        name="price" data-price-radio="" value="3"></a> $$$</label><br>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="uk-container uk-margin">
-                                            <div class="uk-card uk-card-default uk-card-body uk-height-medium">
-                                                <h3 class="uk-card-title">Type</h3>
-                                                <form action="">
-                                                    <label><a href="#" uk-switcher-item="3"><input class="uk-radio" onclick="setType()" type="radio"
-                                                            name="type" data-type-radio="" value="0" checked>
-                                                        Indifférent</label><br>
-                                                    <label><a href="#" uk-switcher-item="3"><input class="uk-radio" onclick="setType()" type="radio"
-                                                            name="type" data-type-radio="" value="1"></a> Indien</label><br>
-                                                    <label><a href="#" uk-switcher-item="3"><input class="uk-radio" onclick="setType()" type="radio"
-                                                            name="type" data-type-radio="" value="2"></a>
-                                                        Végétarien</label><br>
-                                                    <label><a href="#" uk-switcher-item="3"><input class="uk-radio" onclick="setType()" type="radio"
-                                                            name="type" data-type-radio="" value="3"></a>
-                                                        Fast-food</label><br>
-                                                    <label><a href="#" uk-switcher-item="3"><input class="uk-radio" onclick="setType()" type="radio"
-                                                            name="type" data-type-radio="" value="4"></a>
-                                                        Italien</label><br>
-                                                    <label><a href="#" uk-switcher-item="3"><input class="uk-radio" onclick="setType()" type="radio"
-                                                            name="type" data-type-radio="" value="5"></a>
-                                                        Chinois</label><br>
-                                                    <label><a href="#" uk-switcher-item="3"><input class="uk-radio" onclick="setType()" type="radio"
-                                                            name="type" data-type-radio="" value="6"></a> Autre</label><br>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="uk-container uk-margin">
-                                            <div class="uk-card uk-card-default uk-card-body uk-height-medium">
-                                                <h3 class="uk-card-title">Consommation</h3>
-                                                <form action="">
-                                                    <label><input class="uk-radio" onclick="setMode()" type="radio"
-                                                            name="mode" data-mode-radio="" value="3" checked>
-                                                        Indifférent</label><br>
-                                                    <label><input class="uk-radio" onclick="setMode()" type="radio"
-                                                            name="mode" data-mode-radio="" value="1"> Sur
-                                                        place</label><br>
-                                                    <label><input class="uk-radio" onclick="setMode()" type="radio"
-                                                            name="mode" data-mode-radio="" value="2"> À
-                                                        emporter</label><br>
-                                                </form>
-                                            </div>
-                                        </div>
-                                        <button class=" uk-button uk-button-default uk-position-bottom uk-overlay uk-overlay-default uk-text-center" type="button" uk-close>Résultats</button>                                    </li>
-                                </ul>
+    
+                        <div id="card">
+                            <div class="photos"><img src="island poke.jpeg" alt="photo restaurant"></div>
+                            <div class="infos">
+                                <div class="title-star">
+                                    <div>
+                                        <h3>Island Poke</h3>
+                                    </div>
+                                    <div class="star-icon"><img src="star(1).png" alt="add to favorite"></div>
+                                </div>
+                                <p>Sur place <br>Proche<br>Chinois<br> $$$</p>
+                            </div>
+                        </div>
+    
+                        <div id="card" >
+                            <div class="photos"><img src="piu piu restaurant.avif" alt="photo restaurant"></div>
+                            <div class="infos">
+                                <div class="title-star">
+                                    <div>
+                                        <h3>Piu Piu</h3>
+                                    </div>
+                                    <div class="star-icon"><img src="star(1).png" alt="add to favorite"></div>
+                                </div>
+                                <p>A emporter <br> loin <br>Italien<br> $$</p>
+                            </div>
+                        </div>
+    
+                        <div id="card" >
+                            <div class="photos"><img src="paul.jpg" alt="photo restaurant"></div>
+                            <div class="infos">
+                                <div class="title-star">
+                                    <div>
+                                        <h3>Paul</h3>
+                                    </div>
+                                    <div class="star-icon"><img src="star(1).png" alt="add to favorite"></div>
+                                </div>
+                                <p>A emporter <br> loin <br>vegan<br> $</p>
+                            </div>
+                        </div>
+    
+                        <div id="card" >
+                            <div class="photos"><img src="copper branch.jpg" alt="photo restaurant"></div>
+                            <div class="infos">
+                                <div class="title-star">
+                                    <div>
+                                        <h3>Copper B.</h3>
+                                    </div>
+                                    <div class="star-icon"><img src="star(1).png" alt="add to favorite"></div>
+                                </div>
+                                <p>Sur place<br>proche<br>vegan<br> $$</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-        </div>
+        </section>
 
-
+        <!-- RESTAURANTS FILTRES -->
+        
         <!-- data-perimeter="1" -> 1 = 5 minutes; 2 = 10 minutes; 3 = 15 minutes -->
         <!-- data-price="1" -> 1 = $; 2 = $$; 3 = $$$ -->
         <!-- data-type -> 1=Indian; 2=Vegetarien; 3=Fast-food; 4=Italien; 5=Chinois 9=Autre -->
         <!-- data-mode -> 1=Sur place; 2=A emporter 3=Sur place ou à emporter -->
-        <div class="text">
-            <h2 class="uk-text-center">Les bons plans</h2>
-            <h3 class="uk-text-center">Nos étudiants vous partagent leurs restaurants <br>préférés pour déjeuner près de
-                l'école</h3>
-        </div>
-        <!-- card -->
-        <div class="box-container">
 
-            <div class="cards-box">
-                <div class="cards">
-
-                    <div id="card" data-restaurant="true" data-perimeter="3" data-price="3" data-type="1" data-mode="3">
-                        <div class="photos"><img src="mcdo.jpg" alt="photo restaurant"></div>
-                        <div class="infos">
-                            <div class="title-star">
-                                <div>
-                                    <h3>Mc DO</h3>
+        <section>
+            <div class="text">
+                <h2 id="display-results"class="uk-heading-line uk-text-center"><span>D'après vos préférences</span></h2>
+            </div>
+            <div class="box-container">
+                <div class="cards-box">
+                    <div class="cards">
+    
+                        <div id="card"  data-restaurant-radio="true" data-perimeter-radio="1" data-price-radio="2" data-type-radio="2" data-mode-radio="2">
+                            <div class="photos"><img src="mcdo.jpg" alt="photo restaurant"></div>
+                            <div class="infos">
+                                <div class="title-star">
+                                    <div>
+                                        <h3>Mc DO</h3>
+                                    </div>
+                                    <div class="star-icon"><img src="star(1).png" alt="add to favorite"></div>
                                 </div>
-                                <div class="star-icon"><img src="star(1).png" alt="add to favorite"></div>
+                                <p>A emporter / Sur place<br>Proche de vous <br>Fast-food<br> $$</p>
                             </div>
-                            <p>A emporter / Sur place<br>Proche de vous <br>Fast-food<br> $$</p>
                         </div>
-                    </div>
-
-                    <div id="card" data-restaurant="true" data-perimeter="3" data-price="3" data-type="1" data-mode="3">
-                        <div class="photos"><img src="burger king.jpg" alt="photo restaurant"></div>
-                        <div class="infos">
-                            <div class="title-star">
-                                <div>
-                                    <h3>Burger King</h3>
+    
+                        <div id="card" data-my-filter="" data-perimeter-radio="3" data-price-radio="3" data-type-radio="3" data-mode-radio="3">
+                            <div class="photos"><img src="burger king.jpg" alt="photo restaurant"></div>
+                            <div class="infos">
+                                <div class="title-star">
+                                    <div>
+                                        <h3>Burger King</h3>
+                                    </div>
+                                    <div class="star-icon"><img src="star(1).png" alt="add to favorite"></div>
                                 </div>
-                                <div class="star-icon"><img src="star(1).png" alt="add to favorite"></div>
+                                <p>A emporter / Sur place<br> loin <br>Fast-food<br> $$$</p>
                             </div>
-                            <p>A emporter / Sur place<br> loin <br>Fast-food<br> $$$</p>
                         </div>
-                    </div>
-
-                    <div id="card" data-restaurant="true" data-perimeter="3" data-price="3" data-type="1" data-mode="3">
-                        <div class="photos"><img src="island poke.jpeg" alt="photo restaurant"></div>
-                        <div class="infos">
-                            <div class="title-star">
-                                <div>
-                                    <h3>Island Poke</h3>
+    
+                        <div id="card" data-my-filter="" data-perimeter-radio="3" data-price-radio="3" data-type-radio="4" data-mode-radio="3">
+                            <div class="photos"><img src="island poke.jpeg" alt="photo restaurant"></div>
+                            <div class="infos">
+                                <div class="title-star">
+                                    <div>
+                                        <h3>Island Poke</h3>
+                                    </div>
+                                    <div class="star-icon"><img src="star(1).png" alt="add to favorite"></div>
                                 </div>
-                                <div class="star-icon"><img src="star(1).png" alt="add to favorite"></div>
+                                <p>Sur place <br>Proche<br>Chinois<br> $$$</p>
                             </div>
-                            <p>Sur place <br>Proche<br>Chinois<br> $$$</p>
                         </div>
-                    </div>
-
-                    <div id="card" data-restaurant="true" data-perimeter="3" data-price="3" data-type="1" data-mode="3">
-                        <div class="photos"><img src="piu piu restaurant.avif" alt="photo restaurant"></div>
-                        <div class="infos">
-                            <div class="title-star">
-                                <div>
-                                    <h3>Piu Piu</h3>
+    
+                        <div id="card" data-my-filter="true" data-perimeter-radio="3" data-price-radio="3" data-type-radio="6" data-mode-radio="3">
+                            <div class="photos"><img src="piu piu restaurant.avif" alt="photo restaurant"></div>
+                            <div class="infos">
+                                <div class="title-star">
+                                    <div>
+                                        <h3>Piu Piu</h3>
+                                    </div>
+                                    <div class="star-icon"><img src="star(1).png" alt="add to favorite"></div>
                                 </div>
-                                <div class="star-icon"><img src="star(1).png" alt="add to favorite"></div>
+                                <p>A emporter <br> loin <br>Italien<br> $$</p>
                             </div>
-                            <p>A emporter <br> loin <br>Italien<br> $$</p>
                         </div>
-                    </div>
-
-                    <div id="card" data-restaurant="true" data-perimeter="3" data-price="3" data-type="1" data-mode="3">
-                        <div class="photos"><img src="paul.jpg" alt="photo restaurant"></div>
-                        <div class="infos">
-                            <div class="title-star">
-                                <div>
-                                    <h3>Paul</h3>
+    
+                        <div id="card" data-my-filter="true" data-perimeter-radio="1" data-price-radio="3" data-type-radio="7" data-mode-radio="3">
+                            <div class="photos"><img src="paul.jpg" alt="photo restaurant"></div>
+                            <div class="infos">
+                                <div class="title-star">
+                                    <div>
+                                        <h3>Paul</h3>
+                                    </div>
+                                    <div class="star-icon"><img src="star(1).png" alt="add to favorite"></div>
                                 </div>
-                                <div class="star-icon"><img src="star(1).png" alt="add to favorite"></div>
+                                <p>A emporter <br> loin <br>vegan<br> $</p>
                             </div>
-                            <p>A emporter <br> loin <br>vegan<br> $</p>
                         </div>
-                    </div>
-
-                    <div id="card" data-restaurant="true" data-perimeter="3" data-price="3" data-type="1" data-mode="3">
-                        <div class="photos"><img src="copper branch.jpg" alt="photo restaurant"></div>
-                        <div class="infos">
-                            <div class="title-star">
-                                <div>
-                                    <h3>Copper branch</h3>
+    
+                        <div id="card" data-my-filter="true" data-perimeter-radio="2" data-price-radio="2" data-type-radio="4" data-mode-radio="2">
+                            <div class="photos"><img src="copper branch.jpg" alt="photo restaurant"></div>
+                            <div class="infos">
+                                <div class="title-star">
+                                    <div>
+                                        <h3>Copper B.</h3>
+                                    </div>
+                                    <div class="star-icon"><img src="star(1).png" alt="add to favorite"></div>
                                 </div>
-                                <div class="star-icon"><img src="star(1).png" alt="add to favorite"></div>
+                                <p>Sur place<br>proche<br>vegan<br> $$</p>
                             </div>
-                            <p>Sur place<br>proche<br>vegan<br> $$</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
+            </div>    
+        </section>
 
         <!-- SECTION MAP -->
-
-        <div class="map-section">
-
-            <div class="maps "><img class="map" src="map lyon.png" alt="carte lyon"></div>
-            <div class="restaurants-list">
-                <div class="restaurant">
-                    <div><img src="mcdo.jpg" alt="photo restaurant 1"></div>
-                    <div class="infos">
-                        <div class="title-star">
-                            <div>
-                                <h3>Mc DO</h3>
-                            </div>
-                            <div class="star-icon"><img src="star(1).png" alt="add to favorite"></div>
+        <section>
+            <div class="uk-margin">
+                <div id="map" class="text">
+                    <h2 class="uk-heading-line uk-text-center"><span>Carte studylunch</span></h2>
+                </div>
+                <div class="uk-width-1-2 uk-margin-auto ">
+                    <div class="uk-card uk-card-default uk-card-body uk-width-*@m">
+                        <h2 class="uk-text-center">- Trouver oÙ manger -</h2>
+                        <div class="uk-margin-auto uk-width-*@m" >
+                            <iframe id="map" class="uk-width-*@m" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d11133.906731833136!2d4.852705738160801!3d45.761636323898664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRestaurants!5e0!3m2!1sfr!2sfr!4v1665507544056!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
                         </div>
-                        <p>Lorem ipsum dolor sit amet. Est necessitatibus error eos dolorem tenetur est corrupti
-                            quam et
-                            dolores aliquam ea culpa obcaecati eum rerum neque.
-                            Et galisum cupiditate eum voluptate debitis et quis voluptatem aut galisum rerum et
-                            nesciunt
-                            molestiae.</p>
-
-
-                        <div class="price-button">
-                            <div>Des plats de 5 à 15€</div>
-                            <div><a href="https://www.mcdonalds.fr/restaurants/mcdonalds-lyon-part-dieu-reloc/1623"
-                                    target="_blank" class="button">CHOISIR</a></div>
-                        </div>
-
                     </div>
                 </div>
+
             </div>
-        </div>
-        </div>
+        </section>
 
+        <!-- FOOTER -->
+        <section>
+            <div class="uk-card-footer uk-card uk-card-body uk-card-default footer ">
+                <div class="uk-container uk-container-small">
+                    <div class="uk-grid-small uk-child-width-auto uk-flex-center" uk-grid>
+                        <div>
+                            <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="icon: facebook"></a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/mydigitalschool/?hl=fr" class="uk-icon-button uk-margin-small-right" uk-icon="icon: instagram"></a>
+                        </div>
+                        <div>
+                            <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="icon: twitter"></a>
+                        </div>
+                        <div>
+                            <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="icon: linkedin"></a>
+                        </div>
+                    </div>
+                    <div class="uk-container uk-container-small uk-flex-center uk-flex-middle">
+                        <br>
+                        Mentions légales<br>
+                        Conditions générales de ventes <br>
+                        Copyright © 2022 StudyLunch | Powered by Flagency
+                        <br>
+                    </div>
+                </div>
 
+            </div>
+        </section>
     </main>
 
 

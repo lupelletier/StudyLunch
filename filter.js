@@ -95,6 +95,4 @@ function applyFilter() {
     });
 
 }
-// function showAccount() {
-//     document.querySelector('[modal-full]').style.visibility='visible';
-// }
+

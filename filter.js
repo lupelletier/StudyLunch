@@ -1,10 +1,5 @@
 
-function setPerimeter() {
-    // switch to next criteria
-    const filter = document.querySelector("uk-switcher");
-    
-
-        
+function setPerimeter() {    
     //reading selected value
     console.log("setPerimeter");
     const perimeterValue = document.querySelector("[data-perimeter-radio]:checked").value;
@@ -16,10 +11,6 @@ function setPerimeter() {
     
     //apply filter
     applyFilter();
-
-
-
-
 }
 // function switchCriteria() {
 //     const filter = document.querySelector("[switch-filter]");
@@ -39,11 +30,6 @@ function setPrice() {
     //apply filter
     applyFilter();
 
-    //switch to next criteria
-    const filter = document.querySelector("[switch-filter]");
-    filter.setAttribute ("uk-switcher-item","3");
-    
-
 } 
 
 function setType() {
@@ -59,11 +45,6 @@ function setType() {
     //apply filter
     applyFilter();
 
-    //switch to next criteria
-    const filter = document.querySelector("[switch-filter]");
-    filter.setAttribute ("uk-switcher-item","3");
-    
-
 } 
 
 function setMode() {
@@ -78,11 +59,6 @@ function setMode() {
 
     //apply filter
     applyFilter();
-
-    //switch to next criteria
-    const filter = document.querySelector("[switch-filter]");
-    filter.setAttribute ("uk-switcher-item","4");
-    
 
 } 
 

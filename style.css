@@ -109,33 +109,6 @@ h3 {
 
 }
 
-/* COMPTE */
-
-.formulaire {
-    display: none;
-    background-color: white;
-    width: 30%;
-    height: 750px;
-    justify-content: right;
-    float: right;
-    text-align: center;
-}
-
-.formulaire h2 {
-    margin-top: 50px;
-}
-
-.sign-up {
-    margin: 50px;
-}
-
-.sign-up a {
-    margin-left: 20px;
-}
-
-
-
-
 
 /* liste de restaurants */
 .box {
@@ -216,6 +189,7 @@ h3 {
 .title-star {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     height: 25px;
 }
 
@@ -233,7 +207,6 @@ h3 {
     height: 35px;
     color: white;
     font-weight: bold;
-
     text-align: center;
     padding-top: 5px;
 }
@@ -249,7 +222,64 @@ a{
 .star-icon {
     width: 30px;
     height: 30px;
-    margin-right: 10px;
+    margin-right: 20px;
+}
+.text{
+    margin: 40px;
+}
+.text h2{
+    font-size: 60px;
+}
+.text h3{
+    font-size:20px;
+}
+
+
+/* cards */
+
+.box-container{
+    display: flex;
+    justify-content: center;
+}
+.cards-box { 
+    background-color: #354F52;
+    width: 70%;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#card {
+    margin: 20px;
+    background-color: white;
+    flex: 0 0 25%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#card .infos {
+    padding: 7px;
+    margin-left: 20px;
+}
+
+#card .star-icon {
+    margin-right: 40px;
+}
+.photos{
+    width: 100%;
+    height: 200px;
+}
+#card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* 1400px, 1100px, 1023px, 767px */

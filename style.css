@@ -214,7 +214,8 @@ h3 {
 .button:hover {
     color: black;
 }
-a{
+
+a {
     text-decoration: none;
 
 }
@@ -288,7 +289,7 @@ a{
     object-fit: cover;
 }
 
-#modal-full{
+#modal-full {
     z-index: 1;
 }
 
@@ -309,19 +310,23 @@ a{
         width: 25px;
         height: 25px;
     }
-    .map-section p{
+
+    .map-section p {
         font-size: 15px;
     }
-    .map-section h3{
+
+    .map-section h3 {
         font-size: 17px;
     }
-    .button{
+
+    .button {
         width: 80px;
         height: 25px;
         font-size: 15px;
         margin-bottom: 5px;
     }
-    .price-button{
+
+    .price-button {
         font-size: 15px;
     }
 }
@@ -342,24 +347,37 @@ a{
         width: 20px;
         height: 20px;
     }
-    .map-section p{
+
+    .map-section p {
         font-size: 10px;
     }
-    .map-section h3{
+
+    .map-section h3 {
         font-size: 13px;
     }
-    .button{
+
+    .button {
         width: 70px;
         height: 20px;
         font-size: 12px;
         margin-bottom: 5px;
     }
-    .price-button{
+
+    .price-button {
         font-size: 10px;
     }
 }
 
 @media screen and (max-width: 767px) {
+    .cards-box {
+        width: 40%;
+        margin: 5px;
+    }
+
+    #card {
+        flex: 0 0 90%;
+    }
+
     #card p {
         font-size: 9px;
     }
@@ -372,22 +390,95 @@ a{
         width: 15px;
         height: 15px;
     }
-    .map-section p{
+
+    .map-section p {
         font-size: 9px;
     }
-    .map-section h3{
+
+    .map-section h3 {
         font-size: 11px;
     }
-    .button{
+
+    .button {
         width: 60px;
         height: 20px;
         font-size: 10px;
         margin-bottom: 5px;
     }
-    .price-button{
+
+    .price-button {
         font-size: 9px;
     }
-    .photos{
+
+    .photos {
         height: 80px;
+    }
+
+    .map {
+        width: 80%;
+    }
+
+    .restaurant {
+        width: 80%;
+    }
+
+    .text h2 {
+        font-size: 30px;
+    }
+
+    .text h3 {
+        font-size: 15px;
+    }
+
+    .header h1 {
+        font-size: 45px;
+    }
+
+    .header h2 {
+        font-size: 30px;
+    }
+
+    .header h3 {
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    .account-box {
+        width: 45px;
+        height: 45px;
+    }
+
+    .background-image {
+        width: 90%;
+        height: 200px;
+    }
+
+    .background-image a {
+        width: 100px;
+        font-size: 11px;
+    }
+
+    .background-image .button {
+        width: 50%;
+        font-size: 5px;
+    }
+
+    .box-image {
+        display: flex;
+        justify-content: center;
+    }
+    #icon-map {
+        width: 10%;
+    }
+
+    .account {
+        width: 70%;
+        height: 70%;
+        margin: auto;
+
     }
 }

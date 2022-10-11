@@ -214,6 +214,10 @@ h3 {
 .button:hover {
     color: black;
 }
+a{
+    text-decoration: none;
+
+}
 
 .star-icon {
     width: 30px;

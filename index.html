@@ -10,6 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.10/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.10/dist/js/uikit-icons.min.js"></script>
     <script src="js/uikit.min.js"></script>
+    <script src="script.js"></script>
     <scrip src="js/uikit-icons.min.js">
         </script>
         <title>Study-lunch</title>
@@ -19,7 +20,6 @@
 
 
     <div>
-       
 
         <header>
             <div class="header">
@@ -52,9 +52,9 @@
                                                 class="uk-margin uk-width-large uk-margin-auto uk-card uk-card-default uk-card-body uk-box-shadow-large">
                                                 <ul class="uk-tab uk-flex-center" uk-grid
                                                     uk-switcher="animation: uk-animation-fade">
-                                                    <li><a href="#">Sign Up</a></li>
-                                                    <li><a href="#">Log In</a></li>
-                                                    <li class="uk-hidden">Forgot Password?</li>
+                                                    <li><a href="#">S'enregistrer</a></li>
+                                                    <li><a href="#">Se connecter</a></li>
+                                                    <li class="uk-hidden">Mot de passe oublié?</li>
                                                 </ul>
                                                 <ul class="uk-switcher uk-margin">
                                                     <li>
@@ -65,8 +65,7 @@
                                                                 <div class="uk-inline uk-width-1-1">
                                                                     <span class="uk-form-icon"
                                                                         uk-icon="icon: user"></span>
-                                                                    <input class="uk-input uk-form-large" type="text"
-                                                                        placeholder="First and last name">
+                                                                    <input id="username" class="uk-input uk-form-large" type="text" placeholder="Username">
                                                                 </div>
                                                             </div>
                                                             <div class="uk-margin">
@@ -74,7 +73,7 @@
                                                                     <span class="uk-form-icon"
                                                                         uk-icon="icon: mail"></span>
                                                                     <input class="uk-input uk-form-large" type="text"
-                                                                        placeholder="Email address">
+                                                                        placeholder="Adresse mail">
                                                                 </div>
                                                             </div>
                                                             <div class="uk-margin">
@@ -82,7 +81,7 @@
                                                                     <span class="uk-form-icon"
                                                                         uk-icon="icon: lock"></span>
                                                                     <input class="uk-input uk-form-large"
-                                                                        type="password" placeholder="Set a password">
+                                                                        type="password" placeholder="Mot de passe">
                                                                 </div>
                                                             </div>
                                                             <div
@@ -91,12 +90,10 @@
                                                                     agree the Terms and Conditions.</label>
                                                             </div>
                                                             <div class="uk-margin">
-                                                                <button
-                                                                    class="uk-button uk-button-primary uk-button-large uk-width-1-1">Login</button>
+                                                                <a href="index.html" id="submit" class="uk-button uk-button-primary uk-button-large uk-width-1-1">Connexion</a>
                                                             </div>
                                                             <div class="uk-text-small uk-text-center">
-                                                                Déjà inscrit ? <a href="#" uk-switcher-item="1">Log
-                                                                    in</a>
+                                                                Déjà inscrit ? <a href="#" uk-switcher-item="1">Connectez-vous</a>
                                                             </div>
                                                         </form>
                                                     </li>
@@ -108,7 +105,7 @@
                                                                     <span class="uk-form-icon"
                                                                         uk-icon="icon: mail"></span>
                                                                     <input class="uk-input uk-form-large" type="text"
-                                                                        placeholder="Email address">
+                                                                        placeholder="Username" id="username">
                                                                 </div>
                                                             </div>
                                                             <div class="uk-margin">
@@ -121,15 +118,13 @@
                                                             </div>
                                                             <div
                                                                 class="uk-margin uk-text-right@s uk-text-center uk-text-small">
-                                                                <a href="#" uk-switcher-item="2">Forgot Password?</a>
+                                                                <a href="#" uk-switcher-item="2">Mot de passe oublié?</a>
                                                             </div>
                                                             <div class="uk-margin">
-                                                                <button
-                                                                    class="uk-button uk-button-primary uk-button-large uk-width-1-1">Login</button>
+                                                                <a id="submit" href="#" class="uk-button uk-button-primary uk-button-large uk-width-1-1">Connexion</a>
                                                             </div>
                                                             <div class="uk-text-small uk-text-center">
-                                                                Not registered? <a href="#" uk-switcher-item="0">Create
-                                                                    an account</a>
+                                                                Pas enregistré <a href="#" uk-switcher-item="0">Créer un compte</a>
                                                             </div>
                                                         </form>
                                                     </li>
@@ -174,7 +169,6 @@
                 </div>
             </div>
     </div>
-
     </header>
     <main>
         <div data-my-filter="true" data-perimeter-filter-value="0" data-price-filter-value="0"
@@ -296,100 +290,103 @@
             </div>
 
         </div>
+
+
         <!-- data-perimeter="1" -> 1 = 5 minutes; 2 = 10 minutes; 3 = 15 minutes -->
         <!-- data-price="1" -> 1 = $; 2 = $$; 3 = $$$ -->
         <!-- data-type -> 1=Indian; 2=Vegetarien; 3=Fast-food; 4=Italien; 5=Chinois 9=Autre -->
         <!-- data-mode -> 1=Sur place; 2=A emporter 3=Sur place ou à emporter -->
         <div class="text">
             <h2 class="uk-text-center">Les bons plans</h2>
-            <h3 class="uk-text-center">Nos étudiants vous partagent leurs restaurants <br>préférés pour déjeuner près de l'école</h3>
-</div>
+            <h3 class="uk-text-center">Nos étudiants vous partagent leurs restaurants <br>préférés pour déjeuner près de
+                l'école</h3>
+        </div>
         <!-- card -->
-    <div class="box-container">
-        
-        <div class="cards-box">
-            <div class="cards">
+        <div class="box-container">
 
-                <div id="card" data-restaurant="true" data-perimeter="3" data-price="3" data-type="1" data-mode="3">
-                    <div class="photos"><img src="mcdo.jpg" alt="photo restaurant"></div>
-                    <div class="infos">
-                        <div class="title-star">
-                            <div>
-                                <h3>Mc DO</h3>
+            <div class="cards-box">
+                <div class="cards">
+
+                    <div id="card" data-restaurant="true" data-perimeter="3" data-price="3" data-type="1" data-mode="3">
+                        <div class="photos"><img src="mcdo.jpg" alt="photo restaurant"></div>
+                        <div class="infos">
+                            <div class="title-star">
+                                <div>
+                                    <h3>Mc DO</h3>
+                                </div>
+                                <div class="star-icon"><img src="star(1).png" alt="add to favorite"></div>
                             </div>
-                            <div class="star-icon"><img src="star(1).png" alt="add to favorite"></div>
+                            <p>A emporter / Sur place<br>Proche de vous <br>Fast-food<br> $$</p>
                         </div>
-                        <p>A emporter / Sur place<br>Proche de vous <br>Fast-food<br> $$</p>
                     </div>
-                </div>
 
-                <div id="card" data-restaurant="true" data-perimeter="3" data-price="3" data-type="1" data-mode="3">
-                    <div class="photos"><img src="burger king.jpg" alt="photo restaurant"></div>
-                    <div class="infos">
-                        <div class="title-star">
-                            <div>
-                                <h3>Burger King</h3>
+                    <div id="card" data-restaurant="true" data-perimeter="3" data-price="3" data-type="1" data-mode="3">
+                        <div class="photos"><img src="burger king.jpg" alt="photo restaurant"></div>
+                        <div class="infos">
+                            <div class="title-star">
+                                <div>
+                                    <h3>Burger King</h3>
+                                </div>
+                                <div class="star-icon"><img src="star(1).png" alt="add to favorite"></div>
                             </div>
-                            <div class="star-icon"><img src="star(1).png" alt="add to favorite"></div>
+                            <p>A emporter / Sur place<br> loin <br>Fast-food<br> $$$</p>
                         </div>
-                        <p>A emporter / Sur place<br> loin <br>Fast-food<br> $$$</p>
                     </div>
-                </div>
 
-                <div id="card" data-restaurant="true" data-perimeter="3" data-price="3" data-type="1" data-mode="3">
-                    <div class="photos"><img src="island poke.jpeg" alt="photo restaurant"></div>
-                    <div class="infos">
-                        <div class="title-star">
-                            <div>
-                                <h3>Island Poke</h3>
+                    <div id="card" data-restaurant="true" data-perimeter="3" data-price="3" data-type="1" data-mode="3">
+                        <div class="photos"><img src="island poke.jpeg" alt="photo restaurant"></div>
+                        <div class="infos">
+                            <div class="title-star">
+                                <div>
+                                    <h3>Island Poke</h3>
+                                </div>
+                                <div class="star-icon"><img src="star(1).png" alt="add to favorite"></div>
                             </div>
-                            <div class="star-icon"><img src="star(1).png" alt="add to favorite"></div>
+                            <p>Sur place <br>Proche<br>Chinois<br> $$$</p>
                         </div>
-                        <p>Sur place <br>Proche<br>Chinois<br> $$$</p>
                     </div>
-                </div>
 
-                <div id="card" data-restaurant="true" data-perimeter="3" data-price="3" data-type="1" data-mode="3">
-                    <div class="photos"><img src="piu piu restaurant.avif" alt="photo restaurant"></div>
-                    <div class="infos">
-                        <div class="title-star">
-                            <div>
-                                <h3>Piu Piu</h3>
+                    <div id="card" data-restaurant="true" data-perimeter="3" data-price="3" data-type="1" data-mode="3">
+                        <div class="photos"><img src="piu piu restaurant.avif" alt="photo restaurant"></div>
+                        <div class="infos">
+                            <div class="title-star">
+                                <div>
+                                    <h3>Piu Piu</h3>
+                                </div>
+                                <div class="star-icon"><img src="star(1).png" alt="add to favorite"></div>
                             </div>
-                            <div class="star-icon"><img src="star(1).png" alt="add to favorite"></div>
+                            <p>A emporter <br> loin <br>Italien<br> $$</p>
                         </div>
-                        <p>A emporter <br> loin <br>Italien<br> $$</p>
                     </div>
-                </div>
 
-                <div id="card" data-restaurant="true" data-perimeter="3" data-price="3" data-type="1" data-mode="3">
-                    <div class="photos"><img src="paul.jpg" alt="photo restaurant"></div>
-                    <div class="infos">
-                        <div class="title-star">
-                            <div>
-                                <h3>Paul</h3>
+                    <div id="card" data-restaurant="true" data-perimeter="3" data-price="3" data-type="1" data-mode="3">
+                        <div class="photos"><img src="paul.jpg" alt="photo restaurant"></div>
+                        <div class="infos">
+                            <div class="title-star">
+                                <div>
+                                    <h3>Paul</h3>
+                                </div>
+                                <div class="star-icon"><img src="star(1).png" alt="add to favorite"></div>
                             </div>
-                            <div class="star-icon"><img src="star(1).png" alt="add to favorite"></div>
+                            <p>A emporter <br> loin <br>vegan<br> $</p>
                         </div>
-                        <p>A emporter <br> loin <br>vegan<br> $</p>
                     </div>
-                </div>
 
-                <div id="card" data-restaurant="true" data-perimeter="3" data-price="3" data-type="1" data-mode="3">
-                    <div class="photos"><img src="copper branch.jpg" alt="photo restaurant"></div>
-                    <div class="infos">
-                        <div class="title-star">
-                            <div>
-                                <h3>Copper branch</h3>
+                    <div id="card" data-restaurant="true" data-perimeter="3" data-price="3" data-type="1" data-mode="3">
+                        <div class="photos"><img src="copper branch.jpg" alt="photo restaurant"></div>
+                        <div class="infos">
+                            <div class="title-star">
+                                <div>
+                                    <h3>Copper branch</h3>
+                                </div>
+                                <div class="star-icon"><img src="star(1).png" alt="add to favorite"></div>
                             </div>
-                            <div class="star-icon"><img src="star(1).png" alt="add to favorite"></div>
+                            <p>Sur place<br>proche<br>vegan<br> $$</p>
                         </div>
-                        <p>Sur place<br>proche<br>vegan<br>     $$</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
         <!-- SECTION MAP -->
@@ -431,7 +428,7 @@
     </main>
 
 
-    
+
 </body>
 <script src="filter.js"></script>
 

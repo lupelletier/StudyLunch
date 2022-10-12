@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <div  class="header">
             <!-- HEADER -->
             <div class="uk-margin-auto@m">
@@ -98,7 +98,7 @@
                                             <a href="#" uk-switcher-item="2" class="color" >Mot de passe oublié ?</a>
                                         </div>
                                         <div class="uk-margin">
-                                            <button id="submit-2"class="button-connection uk-button uk-button-primary uk-button-large uk-width-1-1">Connection</button>
+                                            <a id="submit-2" href="" class="button-connection uk-button uk-button-primary uk-button-large uk-width-1-1">Connection</a>
                                         </div>
                                         <div class=" uk-text-small uk-text-center">
                                         
@@ -120,7 +120,7 @@
                                             <button class="uk-button uk-button-primary uk-button-large uk-width-1-1">Confirmer</button>
                                         </div>
                                         <div class="uk-text-small uk-text-center">
-                                            <a href="#" uk-switcher-item="1">Se connecter</a>
+                                            <a href="#header" uk-switcher-item="1">Se connecter</a>
                                         </div>
                                     </form>
                                 </li>
@@ -367,11 +367,13 @@
             <div class="text">
                 <h2 id="display-results"class="uk-heading-line uk-text-center"><span>D'après vos préférences</span></h2>
             </div>
+            <div>
+            </div>
+            <div data-my-filter="true" data-perimeter-filter-value="0" data-price-filter-value="0" data-type-filter-value="0" data-mode-filter-value="3"></div>
             <div class="box-container">
                 <div class="cards-box">
                     <div class="cards">
-    
-                        <div id="card"  data-restaurant-radio="true" data-perimeter-radio="1" data-price-radio="2" data-type-radio="2" data-mode-radio="2">
+                        <div id="card" data-restaurant="true" data-perimeter="1" data-price="2" data-type="2" data-mode="2">
                             <div class="photos"><img src="mcdo.jpg" alt="photo restaurant"></div>
                             <div class="infos">
                                 <div class="title-star">
@@ -384,7 +386,7 @@
                             </div>
                         </div>
     
-                        <div id="card" data-my-filter="" data-perimeter-radio="3" data-price-radio="3" data-type-radio="3" data-mode-radio="3">
+                        <div id="card" data-restaurant="true" data-perimeter="3" data-price="3" data-type="3" data-mode="3">
                             <div class="photos"><img src="burger king.jpg" alt="photo restaurant"></div>
                             <div class="infos">
                                 <div class="title-star">
@@ -397,7 +399,7 @@
                             </div>
                         </div>
     
-                        <div id="card" data-my-filter="" data-perimeter-radio="3" data-price-radio="3" data-type-radio="4" data-mode-radio="3">
+                        <div id="card" data-restaurant="true" data-perimeter="3" data-price="3" data-type="4" data-mode="3">
                             <div class="photos"><img src="island poke.jpeg" alt="photo restaurant"></div>
                             <div class="infos">
                                 <div class="title-star">
@@ -410,7 +412,7 @@
                             </div>
                         </div>
     
-                        <div id="card" data-my-filter="true" data-perimeter-radio="3" data-price-radio="3" data-type-radio="6" data-mode-radio="3">
+                        <div id="card" data-restaurant="true" data-perimeter="3" data-price="3" data-type="6" data-mode="3">
                             <div class="photos"><img src="piu piu restaurant.avif" alt="photo restaurant"></div>
                             <div class="infos">
                                 <div class="title-star">
@@ -423,7 +425,7 @@
                             </div>
                         </div>
     
-                        <div id="card" data-my-filter="true" data-perimeter-radio="1" data-price-radio="3" data-type-radio="7" data-mode-radio="3">
+                        <div id="card" data-restaurant="true" data-perimeter="1" data-price="3" data-type="7" data-mode="3">
                             <div class="photos"><img src="paul.jpg" alt="photo restaurant"></div>
                             <div class="infos">
                                 <div class="title-star">
@@ -436,7 +438,7 @@
                             </div>
                         </div>
     
-                        <div id="card" data-my-filter="true" data-perimeter-radio="2" data-price-radio="2" data-type-radio="4" data-mode-radio="2">
+                        <div id="card" data-restaurant="true" data-perimeter="2" data-price="2" data-type="4" data-mode="2">
                             <div class="photos"><img src="copper branch.jpg" alt="photo restaurant"></div>
                             <div class="infos">
                                 <div class="title-star">

@@ -95,3 +95,10 @@ function applyFilter() {
     });
 
 }
+
+setTimeout(()=>{
+  // uses HTML5 history API to manipulate the location bar
+  history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
+  //come back to top on reload
+  scrollTo(0,0);
+}, 5);
